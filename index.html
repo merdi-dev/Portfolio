@@ -31,7 +31,8 @@
                     </ul>
                 </div>
 
-                <div class="menu"><i id="menu" class="fa fa-reorder" style="font-size: 2.3em; color: rgb(249, 245, 245);"></i></div>
+                <div class="menu"><i id="menu" class="fa fa-reorder"
+                        style="font-size: 2.3em; color: rgb(249, 245, 245);"></i></div>
             </nav>
         </header>
 
@@ -71,19 +72,28 @@
     <!--Section À propos-->
     <section id="about">
         <h2>À propos de moi</h2> <br>
-        <p>
-            ▶ Je suis un développeur informatique passionné du digital avec plus de 4 ans d'expérience. J'adore créer
-            des sites web et
-            des applications dynamiques qui résolvent des problèmes réels et améliorent l'expérience utilisateur.
+        <div class="about-bloc">
+            <div>
+                <p>
+                    Je suis un développeur informatique passionné du digital avec plus de 4 ans d'expérience. J'adore
+                    créer
+                    des sites web et
+                    des applications dynamiques qui résolvent des problèmes réels et améliorent l'expérience
+                    utilisateur.
 
-            Développeur informatique, Administrateur de base de données, Analyste informatique
-        </p>
-        <p>
-            ▶ Licencié en Informatique à la faculté de Sciences et Technologies / Unikin.
-        </p>
-        <p> ▶ Développeur web freelance</p>
+                    Développeur informatique, Administrateur de base de données, Analyste informatique
+                </p>
+            </div>
+            <div>
+                <p>
+                    ▶ Licencié en Informatique à la faculté de Sciences et Technologies / Unikin.
+                </p>
+                <p> ▶ Développeur web freelance</p>
 
-        <p> ▶ Concepteur de base de données</p>
+                <p> ▶ Concepteur de base de données</p>
+            </div>
+            <p class="thanks"> That's all about me! </p>
+        </div>
     </section>
 
     <!--Section Projets-->
@@ -95,10 +105,12 @@
 
         <div class="projet-list">
             <div class="projet-item">
-                <i id="i_2" class="fa fa-diamond" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                <i id="i_2" class="fa fa-diamond" style="font-size: 2em; color: rgb(228, 144, 60);"></i>
                 <p>
                     Un site e-commerce avec une interface moderne et intuitive.
                 </p>
+                <div class="img-bloc"></div>
+                <a href="#">Voir</a>
             </div>
 
             <div class="projet-item">
@@ -106,20 +118,19 @@
                 <p>
                     Un site web pour un resto-bar
                 </p>
-            </div>
-
-            <div class="projet-item">
-                <i id="i_2" class="fa fa-codepen" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
-                <p>
-                    Application web de gestion des tâches utilisant React.js et Node.js.
-                </p>
+                <div class="img-bloc"></div>
+                <a href="#">Voir</a>
             </div>
 
             <div class="projet-item">
                 <i id="i_2" class="fa fa-percent" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                 <p>
-                    Application web de gestion des tâches utilisant React.js et Node.js.
+                    Conception d'un entrepôt de données pour un e-commerce
                 </p>
+                <div class="img-bloc">
+                    <img src="/assets/photos/dashboard.png" />
+                </div>
+                <a href="#">Voir</a>
             </div>
         </div>
     </section>
@@ -128,8 +139,8 @@
     <section id="competence">
         <h2>Mes compétences</h2><br>
 
-        <div class="projet-list">
-            <div class="projet-item">
+        <div class="competence-list">
+            <div class="competence-item">
                 <p><i id="i_2" class="fa fa-code" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
                 <h3>Technologies web</h3><br>
                 <p></p>
@@ -137,31 +148,41 @@
                 <ul class="liste-competences">
                     <li>HTML5 / CSS3</li>
                     <li>JavaScript / React.js</li>
-                    <li>Node.js / Express.js</li>
+                    <li>Node.js / Express.js...</li>
                 </ul>
             </div>
 
-            <div class="projet-item">
+            <div class="competence-item">
                 <p><i id="i_2" class="fa fa-database" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
                 <h3>Gestion de données</h3><br>
                 <p></p>
 
-                <ul class="liste-competences">
+                <ul class="competence-competences">
                     <li>Analyse et Conception</li>
                     <li>Base de données/ MySQL</li>
-                    <li>Conception d'entrepôt de données</li>
+                    <li>Conception d'entrepôt de données...</li>
                 </ul>
             </div>
 
-            <div class="projet-item">
+            <div class="competence-item">
                 <p><i id="i_2" class="fa fa-bar-chart-o" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
                 <h3>Analyse de système d'information</h3><br>
                 <p></p>
 
                 <ul class="liste-competences">
+                    <li>MERISE/ UML</li>
                     <li>Git / GitHub</li>
-                    <li>Responsive Design</li>
+                    <li>Responsive Design...</li>
                 </ul>
+            </div>
+            <div class="competence-image"> <br />
+                <span><i id="i_2" class="fa fa-html5" style="font-size: 5em; color: rgb(215, 110, 4);"></i></span>
+                <spanp><i id="i_2" class="fa fa-css3" style="font-size: 5em; color: rgb(27, 107, 245);"></i></span>
+                    <spanp><i id="i_2" class="fa fa-line-chart"
+                            style="font-size: 5em; color: rgb(14, 117, 3);"></i></span><br>
+                        <img src="/assets/photos/js.png" />
+                        <img src="/assets/photos/node.png" />
+                        <img src="/assets/photos/react.png" />
             </div>
         </div>
     </section>
@@ -192,11 +213,11 @@
             <div class="bloc1">
 
                 <a href="https://wa.me/243821136984">
-                    <i class="fa fa-whatsapp" style="color: green;"></i>
+                    <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i>
                 </a>
 
                 <a href="tel:+243850428083">
-                    <i class="fa fa-phone" style="color: rgb(52, 126, 217);"></i>
+                    <i class="fa fa-phone" style="color: rgb(18, 121, 247);"></i>
                 </a>
 
                 <a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2">

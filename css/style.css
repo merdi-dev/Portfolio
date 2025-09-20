@@ -87,7 +87,7 @@ header {
 /* Indicateur à droit */
 
 #indicateur-1 {
-     color: #fcdab969;
+     color: #fdac5b5e;
      font-size: 2.2em;
      position: absolute;
      top: 480px;
@@ -96,7 +96,7 @@ header {
 }
 
 #indicateur-2 {
-     color: #fcdab969;
+     color: #f6973852;
      font-size: 2.2em;
      position: absolute;
      top: 420px;
@@ -109,7 +109,7 @@ header {
 }
 
 #indicateur-2:hover {
-     color: #e67c12;
+     color: #f4820f;
 }
 
 
@@ -152,7 +152,7 @@ header {
 .bloc-btn {
      position: absolute;
      bottom: 180px;
-     left: 25%;
+     left: 20%;
 }
 
 .btn {
@@ -169,13 +169,11 @@ header {
      position: absolute;
      bottom: 50px;
      right: 140px;
-     width: 36%;
+     width: 34%;
      border-radius: 43% 57% 63% 37% / 69% 62% 38% 31%;
      border: 5px #d8b355 Solid;
 }
 
-
-#about,
 #projets,
 #competence,
 #contact {
@@ -187,16 +185,41 @@ header {
 /* A propos */
 #about {
      height: 100vh;
+     padding: 10px;
+     background-color: rgb(243, 240, 240);
 }
 
-#about,
-h2 {
+.about-bloc {
+     margin: auto;
+     padding: 25px;
+     width: 60%;
+     height: 60%;
+     display: block;
+     gap: 10px;
+     background-color: #e3e3e2;
+     margin-top: 50px;
+}
+
+#about h2 {
+     margin-top: 2.5em;
      text-align: center;
 }
 
-#about>p {
-     text-align: justify;
+#about p {
+     padding: 10px;
+     text-align: start;
      margin: 15px;
+     color: #393838;
+     font-size: 15px;
+}
+
+
+#about .thanks {
+     text-align: end;
+     margin: 15px;
+     font-style: italic;
+     color: #5c5b5b;
+     margin-top: 5em;
 }
 
 /* Projets */
@@ -212,13 +235,42 @@ h2 {
 }
 
 .projet-item {
-     width: 300px;
-     margin: 20px;
+     width: 450px;
+     margin: 10px;
      margin-top: 5em;
+     border: 1px solid rgb(150, 148, 148);
+     border-radius: 40px;
+     background-color: #6d6c6c;
+     color: white;
+     padding: 15px;
 }
 
-#projets svg {
-     color: #e67c12;
+.projet-item p {
+     margin-top: 2em;
+}
+
+.projet-item .img-bloc {
+     background-color: white;
+     height: 235px;
+     width: 400px;
+     margin: 5px;
+     border-radius: 18px;
+     margin-bottom: 1em;
+}
+
+.projet-item img {
+     width: 90%;
+     border-radius: 5px;
+     margin-top: 1em;
+}
+
+.projet-item a {
+     text-decoration: none;
+     color: rgb(252, 249, 249);
+     background-color: rgb(241, 191, 121);
+     border-radius: 49% 51% 53% 47% / 48% 47% 53% 52%;
+     padding: 10px;
+     margin-top: 5em;
 }
 
 /* Compétences */
@@ -227,8 +279,35 @@ h2 {
      height: 100vh;
 }
 
-.liste-competences {
+.competence-list {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
      list-style: none;
+}
+
+
+.competence-list ul li {
+     list-style: none;
+}
+
+.competence-item {
+     width: 400px;
+     height: 250px;
+     margin: 20px;
+     margin-top: 5em;
+     border: 1px solid rgb(150, 148, 148);
+     border-radius: 10px;
+     background-color: #4d4b4b;
+     color: white;
+     padding: 10px;
+}
+
+
+.competence-image img {
+     width: 12vh;
+     border-radius: 105px;
+     margin-top: 1em;
 }
 
 /* Contact */
@@ -244,10 +323,11 @@ form {
      margin: auto;
      padding-top: 10px;
      padding-bottom: 20px;
-     border-radius: 5px;
+     border-radius: 15px;
      border: 1px solid lightblue;
+     background-color: #dadad8;
      max-width: 750px;
-     max-height: 550px;
+     max-height: 650px;
      padding: 20px;
 }
 
@@ -269,7 +349,7 @@ form .message {
 
 #contact input {
      height: 40px;
-     margin-bottom: 10px;
+     margin-bottom: 15px;
 }
 
 #contact input,
@@ -283,13 +363,13 @@ form .message {
 
 #contact textarea {
      width: 60vh;
-     margin-top: 20px;
+     margin-top: 25px;
 }
 
 #contact button {
      background: #ff7e00;
      width: 16em;
-     height: 2.6em;
+     height: 3em;
      margin: 15px;
      border-radius: 5px;
      border: 1px solid #e67c12;

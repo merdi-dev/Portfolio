@@ -8,5 +8,4 @@ menu.addEventListener('click', () => {
 })
 
 //Date du footer
-document.getElementById("date").textContent = new Date().getFullYear();
-
+    document.getElementById("date").textContent = new Date().getFullYear();

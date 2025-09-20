@@ -69,10 +69,6 @@ header {
      font-weight: bold;
 }
 
-#auteur {
-     display: none;
-}
-
 .nav-links a:hover {
      color: #9c7618;
      font-weight: bold;
@@ -146,11 +142,6 @@ header {
      color: #f6f6e6;
 }
 
-.auteur {
-     letter-spacing: 10px;
-     text-decoration: underline #ff7e00;
-}
-
 /*font-variant: small-caps*/
 .intro p {
      color: #ddd;
@@ -180,7 +171,7 @@ header {
      right: 140px;
      width: 36%;
      border-radius: 43% 57% 63% 37% / 69% 62% 38% 31%;
-     border: 10px #d8b355 Solid;
+     border: 5px #d8b355 Solid;
 }
 
 

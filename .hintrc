@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "text-decoration: underline color(rgb(206, 67, 3))",
+          "-ms-filter"
+        ]
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id": "off"
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ],
+    "meta-viewport": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ]
+  }
+}

@@ -6,6 +6,4 @@
 
 # Auteur
 Merdi Bangongo, développeur informatique
-
-README
-style.css, index.html, main.js et ajoute de label
+    

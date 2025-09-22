@@ -1,3 +1,14 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Mon-Portfolio
+    Template URI: Github
+    Description: Ceci est mon Portfolio Développeé avec HTML5, CSS3 et JavaScrip
+    Author: Merdi Bangongo
+    Author URI: Merdi-Dev
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
 @font-face {
      /*déclaration atte (embarqué)*/
      font-family: ma_police;
@@ -21,10 +32,48 @@ body {
      transition: ease 0.8s;
 }
 
-.bloc {
+#prechargement {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #3d3d3dcf;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 9999;
+}
+
+#prechargement.fade-out {
+     opacity: 0;
+     visibility: hidden;
+     transition: visibility 2s ease, opacity 10s linear; 
+}
+
+.image-prechargement {
+     opacity: 0.2;
+     width: 45%;
+     border-radius: 5%;
+}
+
+.content {
+     /*Chache le début*/
+     display: none;
+     opacity: 0;
+     transition: opacity 0.3s ease,
+}
+
+.content.visible {
+     /* Le contenu apparait en fondu */
+     display: block;
+     opacity: 1;
+}
+
+#en-tete {
      /*background: url('../assets/photos/background-merdi-2.jpg') no-repeat center center/cover;*/
      height: 100vh;
-     background-color: #2d2d2c;
+     background-color: #3f3f3e;
 }
 
 header {
@@ -36,18 +85,18 @@ header {
 /* #333*/
 .navbar {
      display: flex;
-     justify-content: start;
-     align-items: center;
+     justify-content: end;
+     align-items: end;
      max-width: 1300px;
      margin: auto;
-     padding: 5px;
+     padding: 8px;
 }
 
 .logo {
      position: absolute;
-     top: 10px;
-     left: 25px;
-     max-width: 75px;
+     top: 18px;
+     left: 38px;
+     max-width: 68px;
 }
 
 .nav-links {
@@ -57,10 +106,14 @@ header {
 .nav-links li {
      display: inline-block;
      justify-content: space-between;
-     margin-top: 10px;
-     padding: 4px;
-     margin-left: 45px;
-     margin-right: 60px;
+     margin-top: 15px;
+     padding: 10px;
+     width: 165px;
+     text-align: center;
+     margin-left: 10px;
+     margin-right: 5px;
+     border: 1px solid rgba(243, 173, 44, 0.086);
+     border-radius: 4px;
 }
 
 .nav-links a {
@@ -69,9 +122,17 @@ header {
      font-weight: bold;
 }
 
-.nav-links a:hover {
-     color: #9c7618;
+.nav-links a i {
+     color: #fce2c8;
+     margin-right: 0.2em;
+}
+
+.nav-links li:hover {
+     background-color: #f7cd8e2d;
      font-weight: bold;
+     transform: translateY(8px);
+     transition: 0.8s;
+     border-radius: 40px;
 }
 
 .navbar .menu {
@@ -79,10 +140,13 @@ header {
      position: absolute;
      top: 18px;
      right: 45px;
-     width: 38px;
+     width: 25px;
      border-radius: 5px;
 }
 
+.navbar p {
+     display: none;
+}
 
 /* Indicateur à droit */
 
@@ -106,10 +170,37 @@ header {
 
 #indicateur-1:hover {
      color: #e67c12;
+     transform: translateY(-10px);
+     transition: 0.5s;
 }
 
 #indicateur-2:hover {
      color: #f4820f;
+     transform: translateY(10px);
+     transition: 0.5s;
+}
+
+.box-rx{
+     position: fixed;
+     display: block;
+     gap: 25px;
+     top: 24em;
+     left: 2em;
+}
+
+.box-rx ul li{
+     list-style: none;
+     margin: 20px;
+}
+.box-rx li i {
+     opacity: 0.2;
+     font-size: 2em;
+}
+
+.box-rx li i:hover {
+     opacity: 1;
+     transform: rotate(360deg);
+     transition: 1s;
 }
 
 
@@ -123,17 +214,22 @@ header {
 }
 
 .intro h1 {
-     font-size: 2.2rem;
+     font-size: 2.6rem;
      color: #f9f8f8;
      padding: 20px;
      font-style: italic;
      margin-top: -6em;
 }
 
+h1:hover {
+     transform: translate(5px);
+     transition: 2s;
+}
+
 #home p {
      color: #f7f5f4;
      margin-top: 1em;
-     font-size: 14px;
+     font-size: 16px;
 }
 
 .intro h1::first-letter {
@@ -142,8 +238,9 @@ header {
      color: #f6f6e6;
 }
 
-/*font-variant: small-caps*/
+
 .intro p {
+     font-variant: small-caps;
      color: #ddd;
      margin-left: 3em;
      font-size: 18px;
@@ -151,8 +248,10 @@ header {
 
 .bloc-btn {
      position: absolute;
-     bottom: 180px;
-     left: 20%;
+     top: 520px;
+     left: 10%;
+     display: flex;
+     gap: 45px;
 }
 
 .btn {
@@ -165,13 +264,20 @@ header {
      border-radius: 5px;
 }
 
+.btn:hover{
+     transform: scale(1.1);
+     transition: 0.6s;
+}
+
 #home img {
      position: absolute;
-     bottom: 50px;
-     right: 140px;
-     width: 34%;
-     border-radius: 43% 57% 63% 37% / 69% 62% 38% 31%;
-     border: 5px #d8b355 Solid;
+     bottom: 20%;
+     right: 5%;
+     width: 36%;
+     border-radius: 66% 34% 74% 26% / 62% 25% 75% 38% ;
+/*  34% 66% 7% 93% / 22% 60% 40% 78%*/
+     border: 1px #a97a042e Solid;
+     padding: 2px;
 }
 
 #projets,
@@ -179,28 +285,63 @@ header {
 #contact {
      padding: 100px 50px;
      text-align: center;
-     margin: 2em;
+     margin: 1.5em;
 }
 
 /* A propos */
 #about {
      height: 100vh;
      padding: 10px;
-     background-color: rgb(243, 240, 240);
+     background-color: rgb(71, 70, 70);
+     color: white;
+     scroll-behavior: smooth;
+     transition: ease 0.8s;
+     background: url("/assets/photos/merdi-dev-font.png") no-repeat center center/cover;
+
 }
 
 .about-bloc {
-     margin: auto;
+     margin: auto 45px;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+     margin-top: 5em;
+}
+.about-bloc .box-1 {
      padding: 25px;
      width: 60%;
-     height: 60%;
-     display: block;
-     gap: 10px;
-     background-color: #e3e3e2;
+     height: auto;
+     background-color: #dfdfdf;
      margin-top: 50px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 40px rgb(207, 206, 206);
+}
+
+.about-bloc .box-2 {
+     padding: 25px;
+     width: auto;
+     height: auto;
+     background-color: #dfdfdf;
+     margin-top: 50px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 40px rgb(207, 206, 206);
+}
+
+.about-bloc .box-1:hover {
+      background-color: #eae9e9;
+     transform: scale(0.9);
+     transition: 1s;
+}
+.about-bloc .box-2:hover {
+     background-color: #eae9e9;
+     transform: scale(1.1);
+     transition: 1s;
 }
 
 #about h2 {
+     color: rgb(14, 13, 13);
      margin-top: 2.5em;
      text-align: center;
 }
@@ -209,8 +350,8 @@ header {
      padding: 10px;
      text-align: start;
      margin: 15px;
-     color: #393838;
-     font-size: 15px;
+     color: #161616;
+     font-size: 16px;
 }
 
 
@@ -218,14 +359,15 @@ header {
      text-align: end;
      margin: 15px;
      font-style: italic;
-     color: #5c5b5b;
+     color: #040404;
      margin-top: 5em;
 }
 
 /* Projets */
 #projets {
-     background-color: #f0eeee;
+     background-color: #e8e7e7;
      height: 100vh;
+     background: url("/assets/photos/bg3.jpg") no-repeat center center/cover;
 }
 
 .projet-list {
@@ -238,11 +380,17 @@ header {
      width: 450px;
      margin: 10px;
      margin-top: 5em;
-     border: 1px solid rgb(150, 148, 148);
+     box-shadow: 10px 10px 40px rgb(207, 206, 206);
      border-radius: 40px;
-     background-color: #6d6c6c;
-     color: white;
+     background-color: #fefefea2;
+     color: rgb(71, 70, 70);
      padding: 15px;
+}
+.projet-item:hover{
+     transform: translateY(-16px);
+     transition: 1s;
+     background-color: #b4b2b2;
+     color: white;
 }
 
 .projet-item p {
@@ -250,9 +398,8 @@ header {
 }
 
 .projet-item .img-bloc {
-     background-color: white;
-     height: 235px;
-     width: 400px;
+     height: auto;
+     width: auto;
      margin: 5px;
      border-radius: 18px;
      margin-bottom: 1em;
@@ -262,21 +409,13 @@ header {
      width: 90%;
      border-radius: 5px;
      margin-top: 1em;
-}
-
-.projet-item a {
-     text-decoration: none;
-     color: rgb(252, 249, 249);
-     background-color: rgb(241, 191, 121);
-     border-radius: 49% 51% 53% 47% / 48% 47% 53% 52%;
-     padding: 10px;
-     margin-top: 5em;
-}
+}    
 
 /* Compétences */
 #competence {
-     background-color: #f1f1f0;
+     background-color: #fdfdfc;
      height: 100vh;
+     padding: 14px;
 }
 
 .competence-list {
@@ -293,21 +432,37 @@ header {
 
 .competence-item {
      width: 400px;
-     height: 250px;
+     height: auto;
      margin: 20px;
      margin-top: 5em;
-     border: 1px solid rgb(150, 148, 148);
+     box-shadow: 10px 10px 40px rgb(207, 206, 206);
      border-radius: 10px;
      background-color: #4d4b4b;
      color: white;
-     padding: 10px;
+     padding: 18px;
+}
+
+.competence-item:hover {
+     transform: translateY(16px);
+     transition: 1s;
+     background-color: #686767;
 }
 
 
 .competence-image img {
      width: 12vh;
      border-radius: 105px;
-     margin-top: 1em;
+     margin-top: 2em;
+}
+
+.competence-image img:hover {
+     transform: rotate(360deg);
+     transition: 1s;
+}
+
+.competence-image i:hover {
+     transform: rotate(360deg);
+     transition: 1s;
 }
 
 /* Contact */
@@ -315,8 +470,17 @@ header {
      margin: auto;
      align-items: center;
      justify-content: space-between;
-     background-color: #f8f6f3;
+     background-color: #f7f7f5;
      height: 85vh;
+}
+.box-contact {
+     padding: 2em;
+     gap: 25px;     
+     display: flex;
+}
+.box-contact div{
+     border-radius: 10px;
+     border: 1px solid rgba(148, 148, 148, 0.483);   
 }
 
 form {
@@ -382,6 +546,10 @@ form .message {
      background: rgb(229, 199, 142);
 }
 
+#contact button:hover{
+      transform: scale(1.1);
+     transition: 1s;
+}
 
 /* Footer */
 footer {
@@ -415,6 +583,11 @@ footer>#container {
      font-size: 2.4em;
      justify-content: space-around;
      margin: 10px;
+}
+
+.bloc1 a i:hover{
+     transform: rotate(360deg);
+     transition: 1s;
 }
 
 .copy {

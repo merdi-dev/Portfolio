@@ -1,3 +1,8 @@
+/**
+ *      Gestion de la responsivité
+ * 
+ */
+
 /* Medium <= 992px */
 @media screen and (max-width: 992px) {
     .navbar {
@@ -5,10 +10,11 @@
     }
 
     .navbar .logo {
-        max-width: 60px;
+        max-width: 50px;
         position: absolute;
-        top: 8px;
+        top: 10px;
         right: 50px;
+        z-index: 1000;
     }
 
     .navbar .menu {
@@ -19,9 +25,9 @@
     .nav-links {
         top: 0;
         left: 0;
-        position: absolute;
+        position: fixed;
         background-color: rgba(89, 89, 89, 0.356);
-        backdrop-filter: blur(155px);
+        backdrop-filter: blur(50px);
         width: 100%;
         height: 100vh;
         display: flex;
@@ -30,23 +36,37 @@
         margin-left: -100%;
         transition: all 0.6s ease;
         z-index: 100;
-        position: fixed;
-        border-bottom: #877951 2px solid;
+        border-bottom: #877951 1px solid;
     }
 
     .mobile-menu {
         margin-left: 0;
     }
 
+    /* Bloque le scroll */
+    html.no-scroll,
+    body.no-scroll {
+        overflow: hidden;
+        height: 100%;
+    }
+
     .nav-links ul {
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-top: -299px ;
+        margin-top: -200px;
     }
 
     .navbar .nav-links ul li {
         margin: 25px 0;
+        width: 450px;
+        font-size: 12px;
+        border: #877951aa 1px solid;
+        border-bottom: 2px Solid rgba(230, 155, 15, 0.421);
+    }
+
+    .navbar .nav-links ul li:hover {
+        border-bottom: 2px Solid rgba(241, 241, 240, 0.842);
     }
 
     .nav-links li a {
@@ -56,13 +76,14 @@
         font-weight: bold;
     }
 
-    .nav-links li a:hover {
-        color: rgb(243, 197, 137);
-        padding: 1px;
-        height: 1px;
-        border-radius: 5px;
-        transition: all 0.5s ease;
-        margin-left: 50px;
+    .navbar p {
+        color: #f3f2ef80;
+        position: fixed;
+        bottom: 1px;
+        left: 12px;
+        font-size: 12px;
+        display: block;
+        z-index: 1000;
     }
 
     /*Home*/
@@ -71,7 +92,7 @@
         font-size: 1.3rem;
         padding: 5px;
         margin: 10px;
-        margin-top: -340px;
+        margin-top: -380px;
     }
 
     .intro h1::first-letter {
@@ -85,23 +106,37 @@
 
     .bloc-btn {
         position: absolute;
-        bottom: 450px;
-        left: 27%;
+        top: 20em;
+        left: 28%;
+         display: block;
     }
 
     .btn {
-        padding: 2px 10px;
+        padding: 12px 15px;
         margin-top: 15px;
         margin-left: 2em;
     }
 
     #home img {
         position: absolute;
-        bottom: 25px;
-        right: 100px;
-        width: 55%;
-        border-radius: 43% 57% 63% 37% / 69% 62% 38% 31%;
-        border: 5px #d8b355 Solid;
+        bottom: 15px;
+        right: 16em;
+        width: 50%;
+        border-radius: 66% 34% 74% 26% / 62% 25% 75% 38% ;/*34% 66% 7% 90% / 22% 60% 40% 78%;*/
+        border: 1px #d8b35558 Solid;
+        padding: 5px;
+    }
+
+    #about,
+    #projets,
+    #competence,
+    #contact {
+        height: auto;
+        margin-top: 1.5em;
+    }
+
+    .about-bloc {
+        margin-top: 0em;
     }
 
     /* Projet */
@@ -167,7 +202,59 @@
 }
 
 /* Small <= 768px */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .navbar .nav-links ul li {
+        width: 300px;
+        font-size: 11px;
+    }
+
+    .intro h1{
+         margin-top: -20em;
+    }
+    .bloc-btn {
+        top: 35%;
+        left: 20.5%;
+    }
+
+    #home img {
+        left: 6em;
+        bottom: 5em;
+        width: 65%;
+    }
+
+    #about {
+        margin: 1.5em;
+    }
+
+    .projet-list {
+        justify-content: space-between;
+    }
+
+    .projet-item p {
+        margin-top: 0.5em;
+    }
+
+    .projet-item {
+        width: 480px;
+        margin: 5px;
+        margin-top: 0.5em;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .projet-item img {
+        width: 90%;
+        border-radius: 2px;
+        margin-top: 0.1em;
+    }
+
+    .projet-item,
+    .competence-item {
+        margin-top: 2.5em;
+        padding: 15px;
+        margin: 5px;
+    }
+}
 
 /* Extra Small <= 576px */
 @media screen and (max-width: 576px) {}

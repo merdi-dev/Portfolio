@@ -5,229 +5,270 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merdi Dev Service</title>
+    <meta name="description"
+        content="Ce site web est mon Portfolio un site qui me présente et me permet d'exposé mes compétence et réalisation à travers le monde" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" sizes="12x12" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/photos/logo mds.png">
+    <!-- Fichiers CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Outils des icon font-awesome -->
     <link rel="stylesheet" href="./assets/font-awesome-4.7/css/font-awesome.min.css">
+    <link
+        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZhY2Vib29rLWljb24gbHVjaWRlLWZhY2Vib29rIj48cGF0aCBkPSJNMTggMmgtM2E1IDUgMCAwIDAtNSA1djNIN3Y0aDN2OGg0di04aDNsMS00aC00VjdhMSAxIDAgMCAxIDEtMWgzeiIvPjwvc3ZnPg==" />
+
 </head>
 
-<body id="en-tete">
+<body>
 
-    <div class="bloc">
-        <!-- Menu -->
-        <header>
-            <nav class="navbar">
-                <!-- Logo-->
-                <a href="#home">
-                    <img src="./assets/photos/logo mds.png" alt="Logo de Merdi Dev Service" class="logo">
-                </a>
+    <!-- l'image 'Préchargement de la page -->
+    <div id="prechargement">
+        <img src="/assets/photos/preload-lent.gif" alt="Chargement..." class="image-prechargement">
+    </div>
+    <div class="content">
+        <!-- En-tete -->
+        <div id="en-tete">
+            <!-- Menu -->
+            <header>
+                <nav class="navbar">
+                    <!-- Logo-->
+                    <a href="#home">
+                        <img src="./assets/photos/logo mds.png" alt="Logo de Merdi Dev Service" class="logo">
+                    </a>
 
-                <div class="nav-links">
-                    <ul id="navLinks">
-                        <li class="active"><a href="#en-tete">Accueil</a></li>
-                        <li><a href="#about">Bio</a></li>
-                        <li><a href="#projets">Projets réalisés</a></li>
-                        <li><a href="#competence">Compétences</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <div class="nav-links">
+                        <ul id="navLinks">
+                            <li class="active"><a href="#en-tete"><i class="fa fa-home"></i> Accueil</a></li>
+                            <li><a href="#about"><i class="fa fa-user"></i> Bio</a></li>
+                            <li><a href="#projets"><i class="fa fa-cogs"></i> Projets réalisés</a></li>
+                            <li><a href="#competence"><i class="fa fa-diamond"></i> Compétences</a></li>
+                            <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu"><i id="menu" class="fa fa-reorder"
+                            style="font-size: 2.3em; color: rgb(249, 245, 245);"></i></div>
+
+                    <p id="auteur"></p>
+                </nav>
+            </header>
+
+            <!--Indicateur à droit-->
+            <a href="#en-tete" id="indicateur-1"><i class="fa fa-angle-double-up"></i></a>
+            <a href="#footer" id="indicateur-2"><i class="fa fa-angle-double-down"></i></a>
+
+            <div class="box-rx">
+                <ul>
+                    <li class="3"><i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i></li>
+                    <li class="3"><i class="fa fa-phone" style="color: rgb(79, 153, 244);"></i></li>
+                    <li class="3"><i class="fa fa-linkedin" style="color: rgb(62, 62, 247);"></i></li>
+                </ul>
+            </div>
+
+            <!--Section Accueil-->
+            <section id="home">
+                <div class="intro">
+                    <h1>Bonjour, <br>Je suis <span class="auteur">Merdi Bangongo</span></h1>
+                    <p>
+                        Je suis un développeur informatique passionné du digital. <br />
+                        Création de sites et application web modernes, optimisés et réactifs.
+                    </p>
+
+                    <div class="bloc-btn">
+                        <a href="#projets" class="btn">
+                            <i id="i_2" class="fa fa-code"
+                                style="font-size: 2em; color: rgb(240, 240, 236); margin-right: 2em;"></i>
+                            Projets réalisés
+                        </a> <br>
+
+                        <a href="#contact" class="btn">
+                            <i id="i_2" class="fa fa-phone"
+                                style="font-size: 2em; color: rgb(240, 238, 236); margin-right: 2.5em;"></i>
+                            Contactez-moi
+                        </a>
+                    </div>
+
+                    <img src="./assets/photos/merdi-dev.png" alt="Photo de Merdi dev"
+                        title="Le développeur Merdi Bangongo" />
+                </div>
+            </section>
+        </div>
+
+        <!--Section À propos-->
+        <section id="about">
+            <div class="about-bloc">
+                <div class="box-1">
+                    <h2>À propos de moi</h2>
+                    <p>
+                        Je suis un développeur informatique passionné du digital avec plus de 4 ans d'expérience.
+                        J'adore
+                        créer
+                        des sites web et
+                        des applications dynamiques qui résolvent des problèmes réels et améliorent l'expérience
+                        utilisateur.
+
+                        Développeur informatique, Administrateur de base de données, analyse de système d'information.
+                    </p>
+
+                    <p class="thanks"> That's all about me! </p>
+                </div>
+                <div class="box-2">
+                    <h2>Étude faite et connaissance acquise</h2>
+                    <p>
+                        ▶ Licencié en Informatique à la faculté de Sciences et Technologies / Unikin.
+                    </p>
+                    <p> ▶ Développeur web freelance</p>
+
+                    <p> ▶ Concepteur de base de données</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Section Projets-->
+        <section id="projets">
+            <h2>Mes projets</h2>
+            <p>
+                Nous vous proposons nos meilleurs services à un coût abordable et adaptatif
+            </p>
+
+            <div class="projet-list">
+                <div class="projet-item">
+                    <i id="i_2" class="fa fa-diamond" style="font-size: 2em; color: rgb(228, 144, 60);"></i>
+                    <p>
+                        Un site e-commerce avec une interface moderne et intuitive.
+                    </p>
+                    <div class="img-bloc"></div>
+                </div>
+
+                <div class="projet-item">
+                    <i id="i_2" class="fa fa-dashboard" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                    <p>
+                        Un site web pour un resto-bar
+                    </p>
+                    <div class="img-bloc"></div>
+                </div>
+
+                <div class="projet-item">
+                    <i id="i_2" class="fa fa-percent" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                    <p>
+                        Conception d'un entrepôt de données pour un e-commerce
+                    </p>
+                    <div class="img-bloc">
+                        <img src="/assets/photos/dashboard.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section Compétences-->
+        <section id="competence">
+            <h2>Mes compétences</h2><br>
+
+            <div class="competence-list">
+                <div class="competence-item">
+                    <p><i id="i_2" class="fa fa-code" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
+                    <h3>Technologies web</h3><br>
+                    <p></p>
+
+                    <ul class="liste-competences">
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript / React.js</li>
+                        <li>Node.js / Express.js...</li>
                     </ul>
                 </div>
 
-                <div class="menu"><i id="menu" class="fa fa-reorder"
-                        style="font-size: 2.3em; color: rgb(249, 245, 245);"></i></div>
-            </nav>
-        </header>
+                <div class="competence-item">
+                    <p><i id="i_2" class="fa fa-database" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
+                    <h3>Gestion de données</h3><br>
+                    <p></p>
 
-        <!--Indicateur à droit-->
-        <a href="#en-tete" id="indicateur-1"><i class="fa fa-angle-double-up"></i></a>
-        <a href="#footer" id="indicateur-2"><i class="fa fa-angle-double-down"></i></a>
-
-        <!--Section Accueil-->
-        <section id="home">
-            <div class="intro">
-                <h1>Bonjour, <br>Je suis <span class="auteur">Merdi Bangongo</span></h1>
-                <p>
-                    Je suis un développeur informatique passionné du digital. <br />
-                    Création de sites et application web modernes, optimisés et réactifs.
-                </p>
-
-                <div class="bloc-btn">
-                    <a href="#projets" class="btn">
-                        <i id="i_2" class="fa fa-code"
-                            style="font-size: 2em; color: rgb(240, 240, 236); margin-right: 2em;"></i>
-                        Projets réalisés
-                    </a> <br>
-
-                    <a href="#contact" class="btn">
-                        <i id="i_2" class="fa fa-phone"
-                            style="font-size: 2em; color: rgb(240, 238, 236); margin-right: 2.5em;"></i>
-                        Contactez-moi
-                    </a>
+                    <ul class="competence-competences">
+                        <li>Analyse et Conception</li>
+                        <li>Base de données/ MySQL</li>
+                        <li>Conception d'entrepôt de données...</li>
+                    </ul>
                 </div>
 
-                <img src="./assets/photos/merdi-veste-arriere-plan.png" alt="Photo de Merdi dev"
-                    title="Le développeur Merdi" />
+                <div class="competence-item">
+                    <p><i id="i_2" class="fa fa-bar-chart-o" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p>
+                    <br>
+                    <h3>Analyse de système d'information</h3><br>
+                    <p></p>
+
+                    <ul class="liste-competences">
+                        <li>MERISE/ UML</li>
+                        <li>Git / GitHub</li>
+                        <li>Responsive Design...</li>
+                    </ul>
+                </div>
+                <div class="competence-image"> <br />
+                    <span><i id="i_2" class="fa fa-html5" style="font-size: 5em; color: rgb(215, 110, 4);"></i></span>
+                    <spanp><i id="i_2" class="fa fa-css3" style="font-size: 5em; color: rgb(27, 107, 245);"></i></span>
+                        <spanp><i id="i_2" class="fa fa-line-chart"
+                                style="font-size: 5em; color: rgb(14, 117, 3);"></i></span><br>
+                            <img src="/assets/photos/js.png" />
+                            <img src="/assets/photos/node.png" />
+                            <img src="/assets/photos/react.png" />
+                </div>
             </div>
         </section>
-    </div>
 
-    <!--Section À propos-->
-    <section id="about">
-        <h2>À propos de moi</h2> <br>
-        <div class="about-bloc">
-            <div>
-                <p>
-                    Je suis un développeur informatique passionné du digital avec plus de 4 ans d'expérience. J'adore
-                    créer
-                    des sites web et
-                    des applications dynamiques qui résolvent des problèmes réels et améliorent l'expérience
-                    utilisateur.
+        <!--Section Contact-->
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <br>
+            <div class="box-contact">
+                <form action="mailto:merdibangongo@gmail.com" method="post" enctype="text/plain">
 
-                    Développeur informatique, Administrateur de base de données, Analyste informatique
-                </p>
-            </div>
-            <div>
-                <p>
-                    ▶ Licencié en Informatique à la faculté de Sciences et Technologies / Unikin.
-                </p>
-                <p> ▶ Développeur web freelance</p>
+                    <label for="nom" class="identite">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Merdi Bangongo..." required><br><br>
 
-                <p> ▶ Concepteur de base de données</p>
-            </div>
-            <p class="thanks"> That's all about me! </p>
-        </div>
-    </section>
+                    <label for="email" class="identite">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="email@exemple.com" required><br><br>
 
-    <!--Section Projets-->
-    <section id="projets">
-        <h2>Mes projets</h2>
-        <p>
-            Nous vous proposons nos meilleurs services à un coût abordable et adaptatif
-        </p>
+                    <label for="message" class="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Votre message ici..."
+                        required></textarea><br><br>
 
-        <div class="projet-list">
-            <div class="projet-item">
-                <i id="i_2" class="fa fa-diamond" style="font-size: 2em; color: rgb(228, 144, 60);"></i>
-                <p>
-                    Un site e-commerce avec une interface moderne et intuitive.
-                </p>
-                <div class="img-bloc"></div>
-                <a href="#">Voir</a>
-            </div>
+                    <button type="submit">Envoyer</button>
+                    <button type="reset">Annuler</button>
+                </form>
 
-            <div class="projet-item">
-                <i id="i_2" class="fa fa-dashboard" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
-                <p>
-                    Un site web pour un resto-bar
-                </p>
-                <div class="img-bloc"></div>
-                <a href="#">Voir</a>
-            </div>
-
-            <div class="projet-item">
-                <i id="i_2" class="fa fa-percent" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
-                <p>
-                    Conception d'un entrepôt de données pour un e-commerce
-                </p>
-                <div class="img-bloc">
-                    <img src="/assets/photos/dashboard.png" />
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31824.862708458742!2d15.322316799999992!3d-4.390912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scd!4v1758556857991!5m2!1sfr!2scd"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <a href="#">Voir</a>
-            </div>
-        </div>
-    </section>
-
-    <!--Section Compétences-->
-    <section id="competence">
-        <h2>Mes compétences</h2><br>
-
-        <div class="competence-list">
-            <div class="competence-item">
-                <p><i id="i_2" class="fa fa-code" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
-                <h3>Technologies web</h3><br>
-                <p></p>
-
-                <ul class="liste-competences">
-                    <li>HTML5 / CSS3</li>
-                    <li>JavaScript / React.js</li>
-                    <li>Node.js / Express.js...</li>
-                </ul>
             </div>
 
-            <div class="competence-item">
-                <p><i id="i_2" class="fa fa-database" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
-                <h3>Gestion de données</h3><br>
-                <p></p>
+        </section>
 
-                <ul class="competence-competences">
-                    <li>Analyse et Conception</li>
-                    <li>Base de données/ MySQL</li>
-                    <li>Conception d'entrepôt de données...</li>
-                </ul>
+
+        <!--Footer-->
+        <footer id="footer">
+            <div id="container">
+                <div class="bloc1">
+
+                    <a href="https://wa.me/243821136984">
+                        <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i>
+                    </a>
+
+                    <a href="tel:+243850428083">
+                        <i class="fa fa-phone" style="color: rgb(18, 121, 247);"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2">
+                        <i class="fa fa-linkedin" style="color: blue;"></i>
+                    </a><br>
+                    <i></i>
+                </div>
             </div>
 
-            <div class="competence-item">
-                <p><i id="i_2" class="fa fa-bar-chart-o" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
-                <h3>Analyse de système d'information</h3><br>
-                <p></p>
-
-                <ul class="liste-competences">
-                    <li>MERISE/ UML</li>
-                    <li>Git / GitHub</li>
-                    <li>Responsive Design...</li>
-                </ul>
-            </div>
-            <div class="competence-image"> <br />
-                <span><i id="i_2" class="fa fa-html5" style="font-size: 5em; color: rgb(215, 110, 4);"></i></span>
-                <spanp><i id="i_2" class="fa fa-css3" style="font-size: 5em; color: rgb(27, 107, 245);"></i></span>
-                    <spanp><i id="i_2" class="fa fa-line-chart"
-                            style="font-size: 5em; color: rgb(14, 117, 3);"></i></span><br>
-                        <img src="/assets/photos/js.png" />
-                        <img src="/assets/photos/node.png" />
-                        <img src="/assets/photos/react.png" />
-            </div>
-        </div>
-    </section>
-
-    <!--Section Contact-->
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <br>
-        <form action="mailto:merdibangongo@gmail.com" method="POST" enctype="text/plain">
-            <label for="nom" class="identite">Nom:</label>
-            <input type="text" name="nom" placeholder="merdi bangongo..." required><br>
-
-            <label for="email" class="identite">Email:</label>
-            <input type="email" name="email" placeholder="email@exemple.com..." required><br>
-
-            <label for="message" class="message">Message:</label>
-            <textarea name="message" rows="2" placeholder="Votre message ici..." required></textarea><br>
-
-            <button type="submit">Envoyer</button>
-            <button type="reset">Annuler</button>
-        </form>
-    </section>
-
-
-    <!--Footer-->
-    <footer id="footer">
-        <div id="container">
-            <div class="bloc1">
-
-                <a href="https://wa.me/243821136984">
-                    <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i>
-                </a>
-
-                <a href="tel:+243850428083">
-                    <i class="fa fa-phone" style="color: rgb(18, 121, 247);"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2">
-                    <i class="fa fa-linkedin" style="color: blue;"></i>
-                </a><br>
-            </div>
-        </div>
-
-        <p class="copy">&copy <span id="date"></span> <br>By Merdi Dev Service. Tous droits réservés.</p><br>
-    </footer>
+            <p class="copy">&copy <span id="date"></span> <br>By Merdi Dev Service. Tous droits réservés.</p><br>
+        </footer>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

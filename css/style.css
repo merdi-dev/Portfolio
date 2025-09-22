@@ -48,7 +48,7 @@ body {
 #prechargement.fade-out {
      opacity: 0;
      visibility: hidden;
-     transition: visibility 2s ease, opacity 10s linear; 
+     transition: visibility 1s ease, opacity 6s linear;
 }
 
 .image-prechargement {
@@ -61,7 +61,7 @@ body {
      /*Chache le début*/
      display: none;
      opacity: 0;
-     transition: opacity 0.3s ease,
+     transition: opacity 1s ease,
 }
 
 .content.visible {
@@ -71,9 +71,10 @@ body {
 }
 
 #en-tete {
-     /*background: url('../assets/photos/background-merdi-2.jpg') no-repeat center center/cover;*/
+     /*background: url('../assets/photos/background-merdi-2.jpg') no-repeat center center/cover; 60rem 5rem;*/
+     /*bottom right*/
      height: 100vh;
-     background-color: #3f3f3e;
+     background-color: #585853;
 }
 
 header {
@@ -108,7 +109,7 @@ header {
      justify-content: space-between;
      margin-top: 15px;
      padding: 10px;
-     width: 165px;
+     min-width: 180px;
      text-align: center;
      margin-left: 10px;
      margin-right: 5px;
@@ -138,7 +139,7 @@ header {
 .navbar .menu {
      display: none;
      position: absolute;
-     top: 18px;
+     top: 10px;
      right: 45px;
      width: 25px;
      border-radius: 5px;
@@ -180,7 +181,7 @@ header {
      transition: 0.5s;
 }
 
-.box-rx{
+.box-rx {
      position: fixed;
      display: block;
      gap: 25px;
@@ -188,12 +189,13 @@ header {
      left: 2em;
 }
 
-.box-rx ul li{
+.box-rx ul li {
      list-style: none;
      margin: 20px;
 }
+
 .box-rx li i {
-     opacity: 0.2;
+     opacity: 0.4;
      font-size: 2em;
 }
 
@@ -203,6 +205,21 @@ header {
      transition: 1s;
 }
 
+
+@media (prefers-reduced-motion: no-preference) {
+  .box-rx li i {
+    animation: App-logo-spin infinite 60s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Home */
 #home {
@@ -264,7 +281,7 @@ h1:hover {
      border-radius: 5px;
 }
 
-.btn:hover{
+.btn:hover {
      transform: scale(1.1);
      transition: 0.6s;
 }
@@ -272,10 +289,10 @@ h1:hover {
 #home img {
      position: absolute;
      bottom: 20%;
-     right: 5%;
+     right: 4.0%;
      width: 36%;
-     border-radius: 66% 34% 74% 26% / 62% 25% 75% 38% ;
-/*  34% 66% 7% 93% / 22% 60% 40% 78%*/
+     border-radius: 66% 34% 74% 26% / 62% 25% 75% 38%;
+     /*  34% 66% 7% 93% / 22% 60% 40% 78%*/
      border: 1px #a97a042e Solid;
      padding: 2px;
 }
@@ -296,7 +313,7 @@ h1:hover {
      color: white;
      scroll-behavior: smooth;
      transition: ease 0.8s;
-     background: url("/assets/photos/merdi-dev-font.png") no-repeat center center/cover;
+     background: url("../assets/photos/merdi-dev-font.png") no-repeat center center/cover;
 
 }
 
@@ -309,6 +326,7 @@ h1:hover {
      gap: 30px;
      margin-top: 5em;
 }
+
 .about-bloc .box-1 {
      padding: 25px;
      width: 60%;
@@ -330,10 +348,11 @@ h1:hover {
 }
 
 .about-bloc .box-1:hover {
-      background-color: #eae9e9;
+     background-color: #eae9e9;
      transform: scale(0.9);
      transition: 1s;
 }
+
 .about-bloc .box-2:hover {
      background-color: #eae9e9;
      transform: scale(1.1);
@@ -354,7 +373,6 @@ h1:hover {
      font-size: 16px;
 }
 
-
 #about .thanks {
      text-align: end;
      margin: 15px;
@@ -367,7 +385,7 @@ h1:hover {
 #projets {
      background-color: #e8e7e7;
      height: 100vh;
-     background: url("/assets/photos/bg3.jpg") no-repeat center center/cover;
+     background: url("../assets/photos/bg3.jpg") no-repeat center center/cover;
 }
 
 .projet-list {
@@ -386,8 +404,9 @@ h1:hover {
      color: rgb(71, 70, 70);
      padding: 15px;
 }
-.projet-item:hover{
-     transform: translateY(-16px);
+
+.projet-item:hover {
+     transform: scale(1.1);
      transition: 1s;
      background-color: #b4b2b2;
      color: white;
@@ -409,7 +428,7 @@ h1:hover {
      width: 90%;
      border-radius: 5px;
      margin-top: 1em;
-}    
+}
 
 /* Compétences */
 #competence {
@@ -424,7 +443,6 @@ h1:hover {
      flex-wrap: wrap;
      list-style: none;
 }
-
 
 .competence-list ul li {
      list-style: none;
@@ -443,12 +461,11 @@ h1:hover {
 }
 
 .competence-item:hover {
-     transform: translateY(16px);
+     transform: scale(1.1);
      transition: 1s;
      background-color: #686767;
 }
-
-
+     
 .competence-image img {
      width: 12vh;
      border-radius: 105px;
@@ -460,8 +477,18 @@ h1:hover {
      transition: 1s;
 }
 
-.competence-image i:hover {
-     transform: rotate(360deg);
+.competence-image #icon-1:hover {
+     transform: translate(-10px);
+     transition: 1s;
+}
+
+.competence-image #icon-2:hover {
+     transform: scale(1.1);
+     transition: 1s;
+}
+
+.competence-image #icon-3:hover {
+     transform: translateX(10px);
      transition: 1s;
 }
 
@@ -473,25 +500,27 @@ h1:hover {
      background-color: #f7f7f5;
      height: 85vh;
 }
+
 .box-contact {
      padding: 2em;
-     gap: 25px;     
+     gap: 25px;
      display: flex;
 }
-.box-contact div{
+
+.box-contact div {
      border-radius: 10px;
-     border: 1px solid rgba(148, 148, 148, 0.483);   
+     border: 1px solid rgba(224, 222, 222, 0.483);
 }
 
 form {
      margin: auto;
-     padding-top: 10px;
+     padding-top: -10em;
      padding-bottom: 20px;
      border-radius: 15px;
      border: 1px solid lightblue;
      background-color: #dadad8;
      max-width: 750px;
-     max-height: 650px;
+     max-height: 550px;
      padding: 20px;
 }
 
@@ -546,8 +575,8 @@ form .message {
      background: rgb(229, 199, 142);
 }
 
-#contact button:hover{
-      transform: scale(1.1);
+#contact button:hover {
+     transform: scale(1.1);
      transition: 1s;
 }
 
@@ -585,7 +614,7 @@ footer>#container {
      margin: 10px;
 }
 
-.bloc1 a i:hover{
+.bloc1 a i:hover {
      transform: rotate(360deg);
      transition: 1s;
 }

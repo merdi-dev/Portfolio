@@ -71,7 +71,8 @@ body {
 }
 
 #en-tete {
-     /*background: url('../assets/photos/background-merdi-2.jpg') no-repeat center center/cover; 60rem 5rem;*/
+     background: url('../assets/photos/sebastian-bednarek-i1M1nQD2l5w-unsplash.jpg') no-repeat center center/cover;
+     /*60rem 5rem;*/
      /*bottom right*/
      height: 100vh;
      background-color: #585853;
@@ -95,9 +96,14 @@ header {
 
 .logo {
      position: absolute;
-     top: 18px;
-     left: 38px;
-     max-width: 68px;
+     top: 40px;
+     left: 48px;
+     max-width: 250px;
+     font-size: 25px;
+     color: rgb(255, 255, 255);
+     filter: contrast(100);
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     text-decoration: none;
 }
 
 .nav-links {
@@ -132,8 +138,8 @@ header {
      background-color: #f7cd8e2d;
      font-weight: bold;
      transform: translateY(8px);
-     transition: 0.8s;
-     border-radius: 40px;
+     transition: 1s;
+     border-radius: 45px;
 }
 
 .navbar .menu {
@@ -143,11 +149,13 @@ header {
      right: 45px;
      width: 25px;
      border-radius: 5px;
+     color: white;
 }
 
 .navbar p {
      display: none;
 }
+
 
 /* Indicateur à droit */
 
@@ -207,52 +215,73 @@ header {
 
 
 @media (prefers-reduced-motion: no-preference) {
-  .box-rx li i {
-    animation: App-logo-spin infinite 60s linear;
-  }
+     .box-rx li i {
+          animation: App-logo-spin infinite 60s linear;
+     }
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+     from {
+          transform: rotate(0deg);
+     }
+
+     to {
+          transform: rotate(360deg);
+     }
 }
 
 /* Home */
 #home {
      height: 90vh;
      display: flex;
-     margin-left: 10%;
+     margin-left: 6%;
      align-items: center;
      font-size: 16px;
+     transition: all 1s ease;
+}
+
+.box-intro {
+     background-color: #4d4b4bc2;
+     width: 600px;
+     border-radius: 10px;
+     margin-top: -15rem;
+     padding: 20px;
+     transition: all 1s ease;
+}
+
+.box-intro:hover {
+     background-color: #4d4b4be6;
+     transition: 1s ease;
 }
 
 .intro h1 {
      font-size: 2.6rem;
-     color: #f9f8f8;
-     padding: 20px;
+     color: #fefefe;
+     padding: 2px;
      font-style: italic;
-     margin-top: -6em;
+     filter: contrast(100);
 }
 
 h1:hover {
-     transform: translate(5px);
+     transform: translateY(-6px);
      transition: 2s;
 }
 
 #home p {
      color: #f7f5f4;
-     margin-top: 1em;
+     margin-bottom: 1em;
      font-size: 16px;
+}
+
+p:hover {
+     transform: translateY(6px);
+     transition: 2s;
 }
 
 .intro h1::first-letter {
      font-size: 4rem;
      font-style: italic;
-     color: #f6f6e6;
+     color: #f4f4eb;
 }
 
 
@@ -265,42 +294,46 @@ h1:hover {
 
 .bloc-btn {
      position: absolute;
-     top: 520px;
-     left: 10%;
+     bottom: 150px;
+     right: 4%;
      display: flex;
-     gap: 45px;
+     gap: 18px;
+     transition: all 1s ease;
 }
 
 .btn {
      display: inline-block;
      padding: 15px 35px;
-     background-color: #f68617;
+     background-color: #f8a450c9;
      color: #fff;
      text-decoration: none;
      margin-top: 20px;
-     border-radius: 5px;
+     border-radius: 8px;
+     border: 1px solid rgba(255, 255, 255, 0.507)
 }
 
 .btn:hover {
+     background-color: #d46b03;
      transform: scale(1.1);
      transition: 0.6s;
 }
 
 #home img {
      position: absolute;
-     bottom: 20%;
-     right: 4.0%;
-     width: 36%;
-     border-radius: 66% 34% 74% 26% / 62% 25% 75% 38%;
+     bottom: 28%;
+     right: 4%;
+     width: 38%;
+     border-radius: 5%;
+     /*66% 34% 74% 26% / 62% 25% 75% 38%*/
      /*  34% 66% 7% 93% / 22% 60% 40% 78%*/
-     border: 1px #a97a042e Solid;
-     padding: 2px;
+     border: 1px #f7f6f3 Solid;
+     padding: -2px;
 }
 
 #projets,
 #competence,
 #contact {
-     padding: 100px 50px;
+     padding: 50px 50px;
      text-align: center;
      margin: 1.5em;
 }
@@ -309,66 +342,60 @@ h1:hover {
 #about {
      height: 100vh;
      padding: 10px;
-     background-color: rgb(71, 70, 70);
      color: white;
      scroll-behavior: smooth;
-     transition: ease 0.8s;
-     background: url("../assets/photos/merdi-dev-font.png") no-repeat center center/cover;
-
+     transition: all 1s ease;
 }
 
 .about-bloc {
-     margin: auto 45px;
+     margin: auto 50px;
      height: auto;
      display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 30px;
-     margin-top: 5em;
+     gap: 20px;
+     margin-top: 8em;
 }
 
 .about-bloc .box-1 {
-     padding: 25px;
-     width: 60%;
+     padding: 5px;
+     width: 50%;
      height: auto;
-     background-color: #dfdfdf;
+     background-color: white;
      margin-top: 50px;
      border-radius: 10px;
-     box-shadow: 10px 10px 40px rgb(207, 206, 206);
+     box-shadow: 10px 10px 40px rgb(189, 189, 189);
 }
 
 .about-bloc .box-2 {
      padding: 25px;
      width: auto;
      height: auto;
-     background-color: #dfdfdf;
+     background-color: white;
      margin-top: 50px;
      border-radius: 10px;
-     box-shadow: 10px 10px 40px rgb(207, 206, 206);
+     box-shadow: 10px 10px 40px rgb(189, 189, 189);
 }
 
 .about-bloc .box-1:hover {
-     background-color: #eae9e9;
-     transform: scale(0.9);
+     background-color: #fcfcfc;
+     transform: translateY(5px);
      transition: 1s;
 }
 
 .about-bloc .box-2:hover {
-     background-color: #eae9e9;
-     transform: scale(1.1);
+     background-color: #fcfcfc;
+     transform: translateY(5px);
      transition: 1s;
 }
 
 #about h2 {
-     color: rgb(14, 13, 13);
-     margin-top: 2.5em;
+     color: rgb(14, 14, 13);
+     margin-top: 1em;
      text-align: center;
 }
 
 #about p {
-     padding: 10px;
+     padding: 2px;
      text-align: start;
-     margin: 15px;
      color: #161616;
      font-size: 16px;
 }
@@ -383,9 +410,8 @@ h1:hover {
 
 /* Projets */
 #projets {
-     background-color: #e8e7e7;
      height: 100vh;
-     background: url("../assets/photos/bg3.jpg") no-repeat center center/cover;
+     transition: all 1s ease;
 }
 
 .projet-list {
@@ -399,17 +425,19 @@ h1:hover {
      margin: 10px;
      margin-top: 5em;
      box-shadow: 10px 10px 40px rgb(207, 206, 206);
-     border-radius: 40px;
+     border-radius: 10px;
      background-color: #fefefea2;
      color: rgb(71, 70, 70);
      padding: 15px;
 }
 
 .projet-item:hover {
-     transform: scale(1.1);
+     transform: translateY(5px);
      transition: 1s;
-     background-color: #b4b2b2;
-     color: white;
+}
+
+.projet-item a {
+     text-align: start;
 }
 
 .projet-item p {
@@ -432,9 +460,10 @@ h1:hover {
 
 /* Compétences */
 #competence {
-     background-color: #fdfdfc;
+     background-color: #fdfdfc9c;
      height: 100vh;
      padding: 14px;
+     transition: all 1s ease;
 }
 
 .competence-list {
@@ -455,21 +484,20 @@ h1:hover {
      margin-top: 5em;
      box-shadow: 10px 10px 40px rgb(207, 206, 206);
      border-radius: 10px;
-     background-color: #4d4b4b;
-     color: white;
+     background-color: #ffffff;
+     color: rgb(54, 53, 53);
      padding: 18px;
 }
 
 .competence-item:hover {
-     transform: scale(1.1);
+     transform: translateY(5px);
      transition: 1s;
-     background-color: #686767;
 }
-     
+
 .competence-image img {
      width: 12vh;
      border-radius: 105px;
-     margin-top: 2em;
+     margin-top: 2.5em;
 }
 
 .competence-image img:hover {
@@ -497,8 +525,9 @@ h1:hover {
      margin: auto;
      align-items: center;
      justify-content: space-between;
-     background-color: #f7f7f5;
-     height: 85vh;
+     background-color: #ffffff;
+     height: 80vh;
+     transition: all 1s ease;
 }
 
 .box-contact {
@@ -508,81 +537,27 @@ h1:hover {
 }
 
 .box-contact div {
+     padding: 20px;
      border-radius: 10px;
      border: 1px solid rgba(224, 222, 222, 0.483);
+     box-shadow: 10px 10px 40px rgba(183, 182, 182, 0.623);
+     width: 45%;
+     background-color: white;
 }
 
-form {
-     margin: auto;
-     padding-top: -10em;
-     padding-bottom: 20px;
-     border-radius: 15px;
-     border: 1px solid lightblue;
-     background-color: #dadad8;
-     max-width: 750px;
-     max-height: 550px;
-     padding: 20px;
-}
-
-form .identite {
-     text-align: start;
-     margin-right: 50px;
-     font-size: 15px;
-     color: #757572;
-     font-weight: bold;
-}
-
-form .message {
-     text-align: start;
-     margin-right: 30px;
-     font-size: 15px;
-     color: #757572;
-     font-weight: bold;
-}
-
-#contact input {
-     height: 40px;
-     margin-bottom: 15px;
-}
-
-#contact input,
-#contact textarea {
-     padding: 4px;
-     width: 60vh;
-     border-radius: 5px;
-     border: 1px solid #e87b0d;
-     border-bottom: solid 2px rgb(233, 233, 214);
-}
-
-#contact textarea {
-     width: 60vh;
-     margin-top: 25px;
-}
-
-#contact button {
-     background: #ff7e00;
-     width: 16em;
-     height: 3em;
-     margin: 15px;
-     border-radius: 5px;
-     border: 1px solid #e67c12;
-     color: white;
+.box-contact div a {
      text-decoration: none;
-     font-size: 14px;
-}
-
-#contact button:focus {
-     background: rgb(229, 199, 142);
-}
-
-#contact button:hover {
-     transform: scale(1.1);
-     transition: 1s;
+     color: #040404;
+     display: block;
+     text-align: center;
+     padding: 2px;
+     margin: 10px;
+     font-size: 18px;
 }
 
 /* Footer */
 footer {
-     background-color: #dbdad9;
+     background-color: #cdcdc972;
      color: #0f0f0f;
 }
 

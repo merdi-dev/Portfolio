@@ -18,11 +18,11 @@
     }
 
     .navbar .logo {
-    position: absolute;
-        top: 10px;
+        position: absolute;
+        top: 6px;
         right: 50px;
-        max-width: 45px;
-        z-index: 100;
+        max-width: 200px;
+        z-index: 1000;
     }
 
     .navbar .menu {
@@ -37,15 +37,15 @@
         display: flex;
         width: 100%;
         height: 100vh;
-        justify-content: center;    
-        align-items: center;    
+        justify-content: center;
+        align-items: center;
         transition: all 0.6s ease;
         backdrop-filter: blur(50px);
         border-bottom: #94865e 1px solid;
         background-color: rgba(25, 24, 24, 0.356);
         transform: translateX(-100%);
         z-index: 100;
-    }   
+    }
 
     .nav-links.mobile-menu {
         transform: translateX(0);
@@ -72,12 +72,12 @@
         margin: 25px 0;
         width: 100%;
         font-size: 12px;
-        border-bottom: 1px solid rgba(230, 155, 15, 0.421);
+        border-bottom: 1px solid rgba(221, 204, 171, 0.969);
         text-align: center;
     }
 
     .navbar .nav-links ul li:hover {
-        border-bottom: 2px Solid rgba(241, 241, 240, 0.842);
+        border-bottom: 2px Solid rgba(248, 248, 248, 0.842);
     }
 
     .nav-links li a {
@@ -98,12 +98,15 @@
     }
 
     /*Home*/
+    .box-intro {
+        width: 640px;
+        margin-top: -20.5rem;
+    }
+
     .intro h1 {
-        text-align: start;
-        font-size: 1.3rem;
-        padding: 5px;
+        font-size: 1.2rem;
+        padding: 2px;
         margin: 10px;
-        margin-top: -14em;
     }
 
     .intro h1::first-letter {
@@ -113,10 +116,10 @@
     .intro p {
         margin-right: 2.6em;
     }
-    
+
     .bloc-btn {
         position: absolute;
-        top: 20em;
+        top: 22.5em;
         left: 28%;
         display: block;
     }
@@ -127,13 +130,14 @@
         margin-left: 2em;
     }
 
-    #home img { 
+    #home img {
         bottom: 15px;
         right: 16em;
         width: 50%;
-        border-radius: 66% 34% 74% 26% / 62% 25% 75% 38%;
+        border-radius: 5%;
         /*34% 66% 7% 90% / 22% 60% 40% 78%;*/
         padding: 5px;
+        transition: all 1s ease;
     }
 
     #about,
@@ -149,6 +153,7 @@
     }
 
     /* Projet */
+
     .projet-item {
         margin-top: 0.1em;
     }
@@ -233,30 +238,40 @@
 /* Small <= 768px */
 @media screen and (max-width: 768px) {
     .navbar .nav-links ul li {
-        max-width: 450px;
-        font-size: 11px;
+        max-width: 400px;
+        font-size: 12px;
         text-align: start;
     }
 
+
+    .box-intro {
+        background-color: #4d4b4bc2;
+        width: 500px;
+        border-radius: 10px;
+        margin-top: -20.5rem;
+    }
+
     .intro h1 {
-        text-align: center;
-        margin-top: -16em;
+        text-align: start;
+        font-size: 1.3rem;
+        padding: 2px;
+        margin: 10px;
     }
 
     .bloc-btn {
-        top: 38%;
+        top: 42%;
         left: 20.5%;
     }
 
     #home img {
         left: 6em;
-        bottom: 5em;
+        bottom: 1.5em;
         width: 65%;
     }
 
     /* A propos*/
     #about {
-        margin: 1em;
+        margin: 2em;
     }
 
     .about-bloc {
@@ -282,15 +297,11 @@
         margin-top: 40px;
     }
 
-    .about-bloc .box-1:hover {
-        background-color: #eae9e9;
-        transform: scale(1.1);
-        transition: 1s;
-    }
-
     /* Projets */
     .projet-list {
         justify-content: space-between;
+        padding: 0;
+        margin: 0;
     }
 
     .projet-item p {
@@ -298,11 +309,10 @@
     }
 
     .projet-list .projet-item {
-        max-width: 480px;
-        margin: 4px;
-        margin-top: 1.5em;
+        min-width: 450px;
+        margin-top: 3em;
         border-radius: 16px;
-        padding: 10px;
+        margin-left: -20px;
     }
 
     .projet-item img {
@@ -311,26 +321,38 @@
         margin-top: 0.1em;
     }
 
-    #competence-list .competence-item {
-        margin-top: 1em;
-        padding: 15px;
-        margin: 2px;
+    /* Competences */
+    #competence {
+        padding: 0;
+    }
+    .competence-item{
+        width: 450px;
     }
 
     .competence-image img {
-        width: 14%;
-        margin-top: 2em;
+        width: 15%;
+        margin-top: 4em;
+    }
+
+    .competence-image i {
+        margin-top: 1em;
     }
 
     /* Contact */
     #contact {
-        height: 100vh;
+        height: 80vh;
+        margin: 2px;
     }
 
     .box-contact {
-        padding: 0.5em;
+        padding: 0.2em;
         gap: 10px;
         display: block;
+    }
+
+    .box-contact div {
+        width: 90%;
+        height: auto;
     }
 }
 

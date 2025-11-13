@@ -19,11 +19,6 @@
 </head>
 
 <body>
-
-    <!-- l'image 'Préchargement de la page -->
-    <div id="prechargement">
-        <img src="./assets/photos/preload-lent.gif" alt="Chargement..." class="image-prechargement">
-    </div>
     <div class="content">
         <!-- En-tete -->
         <div id="en-tete">
@@ -37,17 +32,17 @@
 
                     <div class="nav-links">
                         <ul id="navLinks">
+                            <span class="titre-logo">Merdi-Dev Service</span>
                             <li class="active"><a href="#en-tete"><i class="fa fa-home"
                                         style="font-size: 1.4em;"></i></a></li>
                             <li><a href="#about"><i class="fa fa-user"></i> À propos</a></li>
-                            <li><a href="#projets"><i class="fa fa-cogs"></i> Projets réalisés</a></li>
-                            <li><a href="#competence"><i class="fa fa-diamond"></i> Compétences</a></li>
-                            <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
+                            <li><a href="#projets"><i class="fa fa-cogs"></i> Mes Projets</a></li>
+                            <li><a href="#competence"><i class="fa fa-diamond"></i> Mes Compétences</a></li>
                         </ul>
                     </div>
 
                     <div class="menu">
-                        <i id="menu" class="fa fa-reorder" style="font-size: 2.3em; color: rgb(249, 245, 245);"></i>
+                        <i id="menuIcon" class="fa fa-reorder fa-close" style="font-size: 2em; color: rgb(249, 245, 245);" aria-hidden="true"></i>
                     </div>
 
                     <p id="auteur"></p>
@@ -60,9 +55,10 @@
 
             <div class="box-rx">
                 <ul>
-                    <li class="3"><i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i></li>
-                    <li class="3"><i class="fa fa-phone" style="color: rgb(79, 153, 244);"></i></li>
-                    <li class="3"><i class="fa fa-linkedin" style="color: rgb(3, 37, 231);"></i></li>
+                    <li class="3"><a href="https://wa.me/243824499881"><i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i></a></li>
+                    <li class="3"><a href="tel:+243850428083"><i class="fa fa-phone" style="color: rgb(79, 153, 244);"></i></a></li>
+                    <li class="3"><a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2"><i class="fa fa-linkedin" style="color: rgb(3, 37, 231);"></i></a></li>
+                    <li class="3"> <a href=""><i class="fa fa-github" style="color: rgb(8, 8, 8);"></i></a></li>
                 </ul>
             </div>
 
@@ -72,20 +68,21 @@
                     <div class="box-intro">
                         <h1>Bonjour, <br>Je suis <span class="auteur">Merdi Bangongo</span></h1>
                         <p>
-                            Je suis un développeur informatique et ingénieur ML passionné du digital. <br />
-                            Création de sites et application web modernes, optimisés et réactifs.
+                            Je suis un développeur web et passionné du digital. <br />
+                            Création de sites et application web modernes, optimisés et réactifs. <br />
+                            Utilisant React et Node.js.
                         </p>
 
                         <div class="bloc-btn">
                             <a href="#projets" class="btn">
                                 <i id="i_2" class="fa fa-code"
-                                    style="font-size: 2em; color: rgb(240, 240, 236); margin-right: 2em;"></i>
+                                    style="font-size: 2em; color: rgb(240, 240, 236); margin-right: 1em;"></i>
                                 Projets réalisés
                             </a> <br>
 
                             <a href="#contact" class="btn">
                                 <i id="i_2" class="fa fa-phone"
-                                    style="font-size: 2em; color: rgb(240, 238, 236); margin-right: 2.5em;"></i>
+                                    style="font-size: 2em; color: rgb(240, 238, 236); margin-right: 1em;"></i>
                                 Contactez-moi
                             </a>
                         </div>
@@ -101,16 +98,16 @@
         <section id="about">
             <div class="about-bloc">
                 <div class="box-1">
-                    <h2>À propos de Merdi-Dev</h2>
+                    <h2>Qui suis-je ?</h2>
                     <p>
-                        Je suis un développeur informatique passionné du digital avec plus de 4 ans d'expérience.
-                        J'adore
-                        créer
-                        des sites web et
-                        des applications dynamiques qui résolvent des problèmes réels et améliorent l'expérience
+                        Je suis un développeur informatique passionné du digital avec un solide experience. <br />
+                        J'adore créer des sites web et des applications dynamiques qui résolvent des problèmes réels et
+                        améliorent l'expérience
                         utilisateur.
+                        <br />
 
-                        Développeur informatique, Administrateur de base de données, analyse de système d'information.
+                        Développeur informatique, Administrateur de base de données, analyse de système d'information et
+                        bien d'autre competence.
                     </p>
 
                     <p class="thanks"> That's all about me! </p>
@@ -118,13 +115,19 @@
 
                 <div class="box-2">
                     <p>
-                        ● Diplômé universitaire en Informatique /UNIKIN, +5 ans d'experience professionnelle
+                        ● Diplôme en Informatique <br />
+                        <span style="font-size: 13px; color: gray;"> Mathématique, Statistiques et Informatique,
+                            Fac Sciences et Technologies /UNIKIN</span>
                     </p>
                     <p>
-                        ● Développeur web freelance
+                        ● Développeur frontend <br>
+                        <span style="font-size: 13px; color: gray;">Je suis un développeur frontend avec une bonne
+                            experience</span>
                     </p>
                     <p>
-                        ● Concepteur de base de données et BI
+                        ● Passionné par l'UI/UX <br />
+                        <span style="font-size: 13px; color: gray;">Créer des interfaces utilisateur attrayantes et
+                            fonctionnelles est ma priorité.</span>
                     </p>
                 </div>
             </div>
@@ -132,53 +135,82 @@
 
         <!--Section Projets-->
         <section id="projets">
-            <h2>Mes Réalisation</h2>
-            <p>
-                Nous vous proposons nos meilleurs services à un coût abordable et adaptatif
-            </p>
+
+            <h2>Expériences</h2>
 
             <div class="projet-list">
                 <div class="projet-item">
-                    <i id="i_2" class="fa fa-diamond" style="font-size: 2em; color: rgb(228, 144, 60);"></i>
                     <p>
-                        Un site e-commerce avec une interface moderne et intuitive.
+                        Technicien informatique à Futuriss Vision S.A
                     </p>
-                    <div class="img-bloc"></div>
+                    <div class="img-bloc">
+                        <img src="./assets/photos/futuriss.png" alt="logo futuriss vision S.A" />
+                    </div>
                 </div>
 
+                <div class="projet-item">
+                    <p>
+                        développeur du jmd-concept
+                    </p>
+                    <div class="img-bloc">
+                        <img src="./assets/photos/logo-jmd.jpg" alt="logo jmd-concept" />
+                    </div>
+                </div>
+
+                <div class="projet-item">
+                    <p>
+                        Etc...
+                    </p>
+                </div>
+            </div>
+
+            <h2>Mes Réalisation</h2>
+
+            <div class="projet-list">
                 <div class="projet-item">
                     <i id="i_2" class="fa fa-dashboard" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                     <p>
-                        <a href="#" style="color: blue; text-align: start;">QG</a> <br />
-                        Un site web pour un resto-bar
+                        Science de la vie /UNIKIN
                     </p>
-                    <div class="img-bloc"></div>
+                    <div class="img-bloc">
+                        <img src="./assets/photos/departement-biologie.png" alt="page d'acceuil science de la vie" />
+                    </div>
                 </div>
 
                 <div class="projet-item">
                     <i id="i_2" class="fa fa-percent" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                     <p>
-                        Conception d'un entrepôt de données pour un e-commerce
+                        Entrepôt de données d'e-commerce pour l'analyse de tendances d'achats en fonction de la période
                     </p>
                     <div class="img-bloc">
-                        <img src="./assets/photos/dashboard.png" />
+                        <img src="./assets/photos/dashboard.png" alt="page d'acceuil memoire" />
                     </div>
                 </div>
                 <div class="projet-item">
-                    <i id="i_2" class="fa fa-percent" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                    <i id="i_2" class="fa fa-magic" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                     <p>
-                        <a href="#" style="color: blue; text-align: start;">CRDIA</a><br />
-                        Site Vitrine pour CRDIA
+                        CRDIA
                     </p>
-                    <div class="img-bloc"></div>
+                    <div class="img-bloc">
+                        <img src="./assets/photos/crdia.png" alt="page d'accueil crdia" />
+                    </div>
                 </div>
                 <div class="projet-item">
-                    <i id="i_2" class="fa fa-percent" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                    <i id="i_2" class="fa fa-diamond" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                     <p>
-                        <a href="#" style="color: blue; text-align: start;">jmd-concept</a><br />
+                        <a href="https://jmd-concept.github.io/jmd-portfolio/"
+                            style="color: blue; text-align: start;">jmd-concept</a><br />
                         Site Vitrine de Jmd-concept
                     </p>
-                    <div class="img-bloc"></div>
+                    <div class="img-bloc">
+                        <img src="./assets/photos/jmdconcept.png" alt="page d'acceuil jmd concept" />
+                    </div>
+                </div>
+
+                <div class="projet-item">
+                    <p>
+                        Etc...
+                    </p>
                 </div>
             </div>
         </section>
@@ -194,8 +226,8 @@
                     <p></p>
 
                     <ul class="liste-competences">
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript / React.js</li>
+                        <li>HTML5 ET CSS3</li>
+                        <li>JavaScript (ES6) / React.js</li>
                         <li>Node.js / Express.js...</li>
                     </ul>
                 </div>
@@ -207,7 +239,7 @@
 
                     <ul class="competence-competences">
                         <li>Analyse et Conception</li>
-                        <li>Base de données/ MySQL</li>
+                        <li>Base de données MySQL et PostgreSQL</li>
                         <li>Conception d'entrepôt de données...</li>
                     </ul>
                 </div>
@@ -215,22 +247,26 @@
                 <div class="competence-item">
                     <p><i id="i_2" class="fa fa-bar-chart-o" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p>
                     <br>
-                    <h3>Analyse de système d'information</h3><br>
+                    <h3>Autres</h3><br>
                     <p></p>
 
                     <ul class="liste-competences">
-                        <li>MERISE/ UML</li>
+                        <li>MERISE/2 ET UML</li>
                         <li>Git / GitHub</li>
+                        <li>Linux</li>
                         <li>Responsive Design...</li>
                     </ul>
                 </div>
                 <div class="competence-image"> <br />
-                    <span><i id="icon-1" class="fa fa-html5"
-                            style="font-size: 5em; color: rgb(215, 110, 4);"></i></span>
-                    <spanp><i id="icon-2" class="fa fa-css3"
-                            style="font-size: 5em; color: rgb(27, 107, 245);"></i></span>
-                        <spanp><i id="icon-3" class="fa fa-line-chart"
-                                style="font-size: 5em; color: rgb(14, 117, 3);"></i></span><br>
+                    <span>
+                        <i id="icon-1" class="fa fa-html5" style="font-size: 5em; color: rgb(215, 110, 4);"></i>
+                    </span>
+                    <spanp>
+                        <i id="icon-2" class="fa fa-css3" style="font-size: 5em; color: rgb(27, 107, 245);"></i>
+                        </span>
+                        <spanp>
+                            <i id="icon-3" class="fa fa-line-chart" style="font-size: 5em; color: rgb(14, 117, 3);"></i>
+                            </span><br>
                             <img src="./assets/photos/js.png" />
                             <img src="./assets/photos/node.png" />
                             <img src="./assets/photos/react.png" />
@@ -240,9 +276,11 @@
 
         <!--Section Contact-->
         <section id="contact">
-            <h3>Contactez-moi</h3>
             <div class="box-contact">
                 <div class="">
+
+                    <h3>Contactez-moi</h3>
+
                     <a href="https://wa.me/243824499881">
                         <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i>
                         +243824499881
@@ -257,7 +295,7 @@
                         <i class="fa fa-linkedin" style="color: blue;"></i>
                         merdi bangongo
                     </a>
-                    <a href="https://wa.me/243824499881">
+                    <a href="">
                         <i class="fa fa-github" style="color: rgb(8, 8, 8);"></i>
                         Merdi-dev
                     </a>
@@ -277,7 +315,7 @@
         <footer id="footer">
             <div id="container">
                 <div class="bloc1">
-                    <p style="color: rgb(14, 15, 15);">Vous servir est notre fierté</p>
+                    <p style="color: rgb(14, 15, 15);">"Vous servir est ma fierté"</p>
                     <a href="https://wa.me/243824499881">
                         <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i>
                     </a>
@@ -295,7 +333,7 @@
                 </div>
             </div>
 
-            <p class="copy">&copy <span id="date"></span> <br>By Merdi Dev Service. Tous droits réservés.</p><br>
+            <p class="copy">&copy <span id="date"></span> <br>By Merdi Bangongo. Tous droits réservés.</p><br>
         </footer>
     </div>
 

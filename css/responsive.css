@@ -9,20 +9,27 @@
         position: fixed;
         background-color: #666665;
         z-index: 1000;
-        height: 55px;
+        height: 56px;
+        transition: all 1s ease-in;
     }
 
     .navbar {
         padding: 0;
+        margin: 0;
         height: 50px;
     }
 
-    .navbar .logo {
+    .logo {
         position: absolute;
-        top: 6px;
-        right: 50px;
-        max-width: 200px;
+        top: -10px;
+        left: 50px;
+        max-width: 260px;
         z-index: 1000;
+        font-size: 25px;
+    }
+
+    .titre-logo {
+        display: block;
     }
 
     .navbar .menu {
@@ -34,17 +41,19 @@
         position: fixed;
         top: 0;
         left: 0;
+        width: 295px;
+        height: 100%;
         display: flex;
-        width: 100%;
-        height: 100vh;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         transition: all 0.6s ease;
         backdrop-filter: blur(50px);
         border-bottom: #94865e 1px solid;
         background-color: rgba(25, 24, 24, 0.356);
         transform: translateX(-100%);
-        z-index: 100;
+        transition: transform 0.5s ease-in-out;
+        z-index: 1000;
+        cursor: pointer;
     }
 
     .nav-links.mobile-menu {
@@ -52,38 +61,37 @@
     }
 
     /* bloque le scroll */
-    html.no-scroll,
+    /*   html.no-scroll,
     body.no-scroll {
         overflow: hidden;
         height: 100%;
-    }
+    } */
 
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin: 0;
         padding: 0;
         width: 100%;
-        margin-top: -20em;
+        margin-top: -16em;
     }
 
     .navbar .nav-links ul li {
-        margin: 25px 0;
+        margin: 20px 0;
         width: 100%;
         font-size: 12px;
-        border-bottom: 1px solid rgba(221, 204, 171, 0.969);
+        border-bottom: 1px solid rgba(221, 204, 171, 0.209);
         text-align: center;
     }
 
     .navbar .nav-links ul li:hover {
-        border-bottom: 2px Solid rgba(248, 248, 248, 0.842);
+        border-bottom: 2px Solid rgba(248, 248, 248, 0.39);
     }
 
     .nav-links li a {
         padding: 25px;
         color: rgb(249, 247, 245);
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-weight: bold;
     }
 
@@ -99,14 +107,17 @@
 
     /*Home*/
     .box-intro {
-        width: 640px;
-        margin-top: -20.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -15rem;
     }
 
     .intro h1 {
         font-size: 1.2rem;
-        padding: 2px;
-        margin: 10px;
+        padding: 1px;
+        margin: 5px;
     }
 
     .intro h1::first-letter {
@@ -114,91 +125,45 @@
     }
 
     .intro p {
-        margin-right: 2.6em;
+        margin-right: 0.1em;
     }
 
     .bloc-btn {
         position: absolute;
-        top: 22.5em;
-        left: 28%;
+        top: 18em;
+        left: 35%;
         display: block;
     }
 
     .btn {
-        padding: 12px 15px;
-        margin-top: 15px;
-        margin-left: 2em;
+        padding: 10px 10px;
+        margin-top: 10px;
     }
 
     #home img {
-        bottom: 15px;
+        bottom: 18px;
         right: 16em;
-        width: 50%;
-        border-radius: 5%;
-        /*34% 66% 7% 90% / 22% 60% 40% 78%;*/
-        padding: 5px;
-        transition: all 1s ease;
+        height: 320px;
+        width: 320px;
     }
 
     #about,
     #projets,
     #competence,
     #contact {
-        height: auto;
-        margin-top: 1.5em;
+        padding: 5px 5px;
+        height: 100%;
+        margin-top: 2em;
     }
 
     .about-bloc {
-        margin-top: 0em;
-    }
-
-    /* Projet */
-
-    .projet-item {
-        margin-top: 0.1em;
+        margin-top: 2.5em;
     }
 
     /* Contact */
-    #contact {
-        height: 100vh;
-    }
-
     .box-contact {
-        padding: 0.5em;
+        padding: 0.1em;
         display: block;
-    }
-
-    form {
-        padding-top: 10px;
-        padding-bottom: 20px;
-        padding: 20px;
-    }
-
-    #contact input {
-        height: 25px;
-        margin-bottom: 5px;
-    }
-
-    #contact input,
-    #contact textarea {
-        padding: 10px;
-        width: 35vh;
-    }
-
-    #contact textarea {
-        width: 35vh;
-        margin-top: 20px;
-    }
-
-    form .identite {
-        text-align: start
-    }
-
-    #contact button {
-        width: 10em;
-        margin: 10px;
-        font-size: 12px;
-        margin-top: 40px;
     }
 
     .box-contact div {
@@ -210,9 +175,9 @@
     }
 
     .box-contact div iframe {
-        border-radius: 4px;
+        border-radius: 2px;
         width: 100%;
-        height: 90%;
+        height: 400px;
     }
 
     /* Footer */
@@ -224,13 +189,13 @@
 
     .bloc1 {
         padding: 5px;
-        margin: 2px;
+        margin: 5px;
         font-size: 15px;
         margin-bottom: 2.5em;
     }
 
     .copy {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
@@ -243,39 +208,26 @@
         text-align: start;
     }
 
-
-    .box-intro {
-        background-color: #4d4b4bc2;
-        width: 500px;
-        border-radius: 10px;
-        margin-top: -20.5rem;
-    }
-
-    .intro h1 {
-        text-align: start;
-        font-size: 1.3rem;
-        padding: 2px;
-        margin: 10px;
+    #home {
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     .bloc-btn {
-        top: 42%;
-        left: 20.5%;
+        left: 30%;
     }
 
     #home img {
-        left: 6em;
-        bottom: 1.5em;
-        width: 65%;
+        left: 28%;
     }
 
     /* A propos*/
     #about {
-        margin: 2em;
+        margin: 1.5em;
     }
 
     .about-bloc {
-        margin: auto 10px;
+        margin: auto;
         height: auto;
         display: block;
         justify-content: center;
@@ -285,10 +237,9 @@
     }
 
     .about-bloc .box-1 {
-        padding: 20px;
+        padding: 25px;
         width: 100%;
         height: auto;
-        margin-top: 1em;
     }
 
     .about-bloc .box-2 {
@@ -298,54 +249,47 @@
     }
 
     /* Projets */
+    #projets h2 {
+        margin: 1%;
+    }
+
     .projet-list {
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         padding: 0;
         margin: 0;
     }
 
     .projet-item p {
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
 
     .projet-list .projet-item {
-        min-width: 450px;
-        margin-top: 3em;
-        border-radius: 16px;
-        margin-left: -20px;
-    }
-
-    .projet-item img {
-        width: 90%;
-        border-radius: 2px;
-        margin-top: 0.1em;
+        width: 95%;
+        padding: 0px;
+        margin: 0;
+        margin-top: 1em;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px rgb(255, 255, 255);
     }
 
     /* Competences */
     #competence {
         padding: 0;
     }
-    .competence-item{
-        width: 450px;
-    }
 
-    .competence-image img {
-        width: 15%;
-        margin-top: 4em;
-    }
-
-    .competence-image i {
-        margin-top: 1em;
+    .competence-item {
+        width: 95%;
     }
 
     /* Contact */
     #contact {
-        height: 80vh;
-        margin: 2px;
+        margin: 0;
     }
 
     .box-contact {
-        padding: 0.2em;
+        padding: 0.1em;
         gap: 10px;
         display: block;
     }

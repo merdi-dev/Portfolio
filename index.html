@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merdi Dev Service</title>
+    <title>Merdi Dev</title>
     <meta name="description"
         content="Ce site web est mon Portfolio un site qui me présente et me permet d'exposé mes compétence et réalisation à travers le monde" />
     <!-- favicon -->
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <!-- Outils des icon font-awesome -->
     <link rel="stylesheet" href="./assets/font-awesome-4.7/css/font-awesome.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 
                     <div class="nav-links">
                         <ul id="navLinks">
-                            <span class="titre-logo">Merdi-Dev Service</span>
+                            <span class="titre-logo">Merdi-Dev</span>
                             <li class="active"><a href="#en-tete"><i class="fa fa-home"
                                         style="font-size: 1.4em;"></i></a></li>
                             <li><a href="#about"><i class="fa fa-user"></i> À propos</a></li>
@@ -42,7 +42,8 @@
                     </div>
 
                     <div class="menu">
-                        <i id="menuIcon" class="fa fa-reorder fa-close" style="font-size: 2em; color: rgb(249, 245, 245);" aria-hidden="true"></i>
+                        <i id="menuIcon" class="fa fa-reorder fa-close"
+                            style="font-size: 2em; color: rgb(249, 245, 245);" aria-hidden="true"></i>
                     </div>
 
                     <p id="auteur"></p>
@@ -55,17 +56,21 @@
 
             <div class="box-rx">
                 <ul>
-                    <li class="3"><a href="https://wa.me/243824499881"><i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i></a></li>
-                    <li class="3"><a href="tel:+243850428083"><i class="fa fa-phone" style="color: rgb(79, 153, 244);"></i></a></li>
-                    <li class="3"><a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2"><i class="fa fa-linkedin" style="color: rgb(3, 37, 231);"></i></a></li>
-                    <li class="3"> <a href=""><i class="fa fa-github" style="color: rgb(8, 8, 8);"></i></a></li>
+                    <li class="3"><a href="https://wa.me/243824499881"><i class="fa fa-whatsapp"
+                                style="color: rgb(2, 155, 2);"></i></a></li>
+                    <!--  <li class="3"><a href="tel:+243850428083"><i class="fa fa-phone"
+                                style="color: rgb(79, 153, 244);"></i></a></li> -->
+                    <li class="3"><a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2"><i
+                                class="fa fa-linkedin" style="color: rgb(3, 37, 231);"></i></a></li>
+                    <li class="3"> <a href="https://github.com/merdi-dev"><i class="fa fa-github"
+                                style="color: rgb(8, 8, 8);"></i></a></li>
                 </ul>
             </div>
 
             <!--Section Accueil-->
             <section id="home">
                 <div class="intro">
-                    <div class="box-intro">
+                    <div class="box-intro px-2">
                         <h1>Bonjour, <br>Je suis <span class="auteur">Merdi Bangongo</span></h1>
                         <p>
                             Je suis un développeur web et passionné du digital. <br />
@@ -89,7 +94,7 @@
                     </div>
 
                     <img src="./assets/photos/merdi-dev.png" alt="Photo de Merdi dev"
-                        title="Le développeur Merdi Bangongo" />
+                        title="Le développeur informatique Merdi Bangongo" />
                 </div>
             </section>
         </div>
@@ -98,8 +103,8 @@
         <section id="about">
             <div class="about-bloc">
                 <div class="box-1">
-                    <h2>Qui suis-je ?</h2>
-                    <p>
+                    <h2 class="font-bold text-xl">Qui suis-je ?</h2>
+                    <p class="text-md">
                         Je suis un développeur informatique passionné du digital avec un solide experience. <br />
                         J'adore créer des sites web et des applications dynamiques qui résolvent des problèmes réels et
                         améliorent l'expérience
@@ -110,19 +115,23 @@
                         bien d'autre competence.
                     </p>
 
-                    <p class="thanks"> That's all about me! </p>
+                    <p class="thanks text-sm"> That's all about me! </p>
                 </div>
 
-                <div class="box-2">
+                <div class="box-2 text-sm">
                     <p>
-                        ● Diplôme en Informatique <br />
-                        <span style="font-size: 13px; color: gray;"> Mathématique, Statistiques et Informatique,
-                            Fac Sciences et Technologies /UNIKIN</span>
+                        ● Diplômé en Informatique <br />
+                        <span style="font-size: 13px; color: gray;">
+                            Mathématique, Statistiques et Informatique,
+                            Fac Sciences et Technologies /UNIKIN
+                        </span>
                     </p>
                     <p>
-                        ● Développeur frontend <br>
-                        <span style="font-size: 13px; color: gray;">Je suis un développeur frontend avec une bonne
-                            experience</span>
+                        ● Développeur full stack <br>
+                        <span style="font-size: 13px; color: gray;">
+                            Je suis un développeur full stack avec une bonne
+                            experience en développement
+                        </span>
                     </p>
                     <p>
                         ● Passionné par l'UI/UX <br />
@@ -141,7 +150,7 @@
             <div class="projet-list">
                 <div class="projet-item">
                     <p>
-                        Technicien informatique à Futuriss Vision S.A
+                        Technicien informatique & Directeur Technique à Futuriss Vision S.A
                     </p>
                     <div class="img-bloc">
                         <img src="./assets/photos/futuriss.png" alt="logo futuriss vision S.A" />
@@ -150,21 +159,24 @@
 
                 <div class="projet-item">
                     <p>
-                        développeur du jmd-concept
+                        JMD Group/JMD Concept
                     </p>
-                    <div class="img-bloc">
+                    <div class="img-bloc jmd">
                         <img src="./assets/photos/logo-jmd.jpg" alt="logo jmd-concept" />
                     </div>
                 </div>
 
                 <div class="projet-item">
                     <p>
-                        Etc...
+                        Institut Cambridge de Kinshasa
                     </p>
+                    <div class="img-bloc">
+                        <img src="./assets/photos/camtik.png" alt="logo Cambridge" />
+                    </div>
                 </div>
             </div>
 
-            <h2>Mes Réalisation</h2>
+            <h2 class="">Mes Réalisation</h2>
 
             <div class="projet-list">
                 <div class="projet-item">
@@ -198,15 +210,23 @@
                 <div class="projet-item">
                     <i id="i_2" class="fa fa-diamond" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
                     <p>
-                        <a href="https://jmd-concept.github.io/jmd-portfolio/"
-                            style="color: blue; text-align: start;">jmd-concept</a><br />
+                        <!-- <a href="https://jmd-concept.github.io/jmd-portfolio/"
+                            style="color: blue; text-align: start;">jmd-concept</a><br /> -->
                         Site Vitrine de Jmd-concept
                     </p>
                     <div class="img-bloc">
-                        <img src="./assets/photos/jmdconcept.png" alt="page d'acceuil jmd concept" />
+                        <img src="./assets/photos/jmdconcept.jpeg" alt="page d'acceuil jmd concept" />
                     </div>
                 </div>
-
+                <div class="projet-item">
+                    <i id="i_2" class="fa fa-cutlery" style="font-size: 2em; color: rgb(215, 110, 4);"></i>
+                    <p>
+                        Quartier Général Resto-bar
+                    </p>
+                    <div class="img-bloc">
+                        <img src="./assets/photos/QG.png" alt="Site vitrine Vitrine QG" />
+                    </div>
+                </div>
                 <div class="projet-item">
                     <p>
                         Etc...
@@ -220,32 +240,35 @@
             <h2>Mes compétences</h2>
 
             <div class="competence-list">
-                <div class="competence-item">
+                <div class="competence-item pt-6!">
                     <p><i id="i_2" class="fa fa-code" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
                     <h3>Technologies web</h3><br>
                     <p></p>
 
                     <ul class="liste-competences">
                         <li>HTML5 ET CSS3</li>
-                        <li>JavaScript (ES6) / React.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>JavaScript (ES6) / React.js/ NextJs</li>
                         <li>Node.js / Express.js...</li>
+                        <li>REST, GraphQL...</li>
                     </ul>
                 </div>
 
-                <div class="competence-item">
+                <div class="competence-item pt-6!">
                     <p><i id="i_2" class="fa fa-database" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p><br>
                     <h3>Gestion de données</h3><br>
                     <p></p>
 
                     <ul class="competence-competences">
                         <li>Analyse et Conception</li>
-                        <li>Base de données MySQL et PostgreSQL</li>
+                        <li>Base de données MySQL, SQLite</li>
+                        <li>PostgreSQL</li>
                         <li>Conception d'entrepôt de données...</li>
                     </ul>
                 </div>
 
-                <div class="competence-item">
-                    <p><i id="i_2" class="fa fa-bar-chart-o" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p>
+                <div class="competence-item pt-6!">
+                    <p><i id="i_2" class="fa fa-gear" style="font-size: 2em; color: rgb(215, 110, 4);"></i></p>
                     <br>
                     <h3>Autres</h3><br>
                     <p></p>
@@ -257,84 +280,100 @@
                         <li>Responsive Design...</li>
                     </ul>
                 </div>
-                <div class="competence-image"> <br />
-                    <span>
-                        <i id="icon-1" class="fa fa-html5" style="font-size: 5em; color: rgb(215, 110, 4);"></i>
-                    </span>
-                    <spanp>
-                        <i id="icon-2" class="fa fa-css3" style="font-size: 5em; color: rgb(27, 107, 245);"></i>
-                        </span>
-                        <spanp>
-                            <i id="icon-3" class="fa fa-line-chart" style="font-size: 5em; color: rgb(14, 117, 3);"></i>
-                            </span><br>
-                            <img src="./assets/photos/js.png" />
-                            <img src="./assets/photos/node.png" />
-                            <img src="./assets/photos/react.png" />
+            </div>
+
+            <div class="m-auto! flex flex-col gap-x-8"> <br />
+                <div class="flex gap-8">
+                    <div class="icon">
+                        <i id="icon-1" class="fa fa-html5" style="font-size: 3em; color: rgb(215, 110, 4);"></i>
+                    </div>
+                    <div class="icon">
+                        <i id="icon-2" class="fa fa-css3" style="font-size: 3em; color: rgb(27, 107, 245);"></i>
+                    </div>
+                    <div class="icon w-16">
+                        <img src="./assets/photos/js.png" />
+                    </div>
+                    <div class="icon">
+                        <i id="icon-3" class="fa fa-github-square" style="font-size: 3em; color: rgb(10, 10, 10);"></i>
+                    </div>
+                </div>
+
+                <div class="competence-image flex gap-x-6 m-8! ">
+                    <img src="./assets/photos/node.png" />
+                    <img src="./assets/photos/react.png" />
+                    <img src="./assets/photos/next.png" class="rounded-full!" />
+                </div>
+
+                <div class="competence-image flex gap-x-6">
+                    <img src="./assets/photos/mysql.png" />
+                    <img src="./assets/photos/pg.png" />
+                    <img src="./assets/photos/sqlite.png" />
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
 
-        <!--Section Contact-->
-        <section id="contact">
-            <div class="box-contact">
-                <div class="">
+    <!--Section Contact-->
+    <section id="contact">
+        <div class="box-contact">
+            <div class="">
 
-                    <h3>Contactez-moi</h3>
+                <h3>Contactez-moi</h3>
 
-                    <a href="https://wa.me/243824499881">
-                        <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i>
-                        +243824499881
-                    </a>
+                <a href="https://wa.me/243824499881">
+                    <i class="fa fa-whatsapp" style="font-size: 2em; color: rgb(2, 155, 2);"></i>
+                    +243824499881
+                </a>
 
-                    <a href="tel:+243850428083">
-                        <i class="fa fa-phone" style="color: rgb(18, 121, 247);"></i>
-                        243850428083
-                    </a>
+                <a href="tel:+243850428083">
+                    <i class="fa fa-phone" style="font-size: 2em; color: rgb(18, 121, 247);"></i>
+                    243850428083
+                </a>
 
-                    <a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2">
-                        <i class="fa fa-linkedin" style="color: blue;"></i>
-                        merdi bangongo
-                    </a>
-                    <a href="">
-                        <i class="fa fa-github" style="color: rgb(8, 8, 8);"></i>
-                        Merdi-dev
-                    </a>
-                </div>
-                <div>
+                <a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2">
+                    <i class="fa fa-linkedin" style="font-size: 2em; color: blue;"></i>
+                    merdi bangongo
+                </a>
+                <a href="">
+                    <i class="fa fa-github" style="font-size: 2em; color: rgb(8, 8, 8);"></i>
+                    Merdi-dev
+                </a>
+            </div>
+            <!--  <div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31824.862708458742!2d15.322316799999992!3d-4.390912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scd!4v1758556857991!5m2!1sfr!2scd"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                </div> -->
+        </div>
+
+    </section>
+
+
+    <!--Footer-->
+    <footer id="footer">
+        <div id="container">
+            <div class="bloc1">
+                <p style="color: rgb(14, 15, 15);">Vous servir est ma fierté</p>
+                <a href="https://wa.me/243824499881">
+                    <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i>
+                </a>
+
+                <a href="tel:+243850428083">
+                    <i class="fa fa-phone" style="color: rgb(18, 121, 247);"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2">
+                    <i class="fa fa-linkedin" style="color: blue;"></i>
+                </a>
+                <a href="https://github.com/merdi-dev">
+                    <i class="fa fa-github" style="color: rgb(8, 8, 8);"></i>
+                </a>
             </div>
+        </div>
 
-        </section>
-
-
-        <!--Footer-->
-        <footer id="footer">
-            <div id="container">
-                <div class="bloc1">
-                    <p style="color: rgb(14, 15, 15);">"Vous servir est ma fierté"</p>
-                    <a href="https://wa.me/243824499881">
-                        <i class="fa fa-whatsapp" style="color: rgb(2, 155, 2);"></i>
-                    </a>
-
-                    <a href="tel:+243850428083">
-                        <i class="fa fa-phone" style="color: rgb(18, 121, 247);"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/merdi-bangongo-54a0392a2">
-                        <i class="fa fa-linkedin" style="color: blue;"></i>
-                    </a>
-                    <a href="https://wa.me/243824499881">
-                        <i class="fa fa-github" style="color: rgb(8, 8, 8);"></i>
-                    </a>
-                </div>
-            </div>
-
-            <p class="copy">&copy <span id="date"></span> <br>By Merdi Bangongo. Tous droits réservés.</p><br>
-        </footer>
+        <p class="copy">&copy <span id="date"></span> <br>By Merdi Bangongo. Tous droits réservés.</p><br>
+    </footer>
     </div>
 
     <script src="./js/main.js"></script>
